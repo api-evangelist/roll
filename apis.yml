@@ -1,7 +1,26 @@
 aid: roll
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/roll.png
 name: Roll
-description: Roll is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Roll was a social token infrastructure platform for the creator economy,
+  letting creators and communities mint and manage their own branded ERC-20 tokens
+  on the Ethereum blockchain. Founded in 2017 in New York City and backed by Techstars,
+  IOSG Ventures, and Fabric Ventures (a $10M Series A), Roll offered developer APIs
+  and OAuth-based integrations so third-party apps could query tokens and balances.
+  The custodial Roll app and its developer API (docs.tryroll.com / api.tryroll.com)
+  were sunset in April 2025 and permanently shut down on 2025-05-26; the company web
+  surface no longer resolves. Added to the API Evangelist network as a portfolio
+  lead; this pass confirms the company is defunct with no live API surface remaining.
 url: https://raw.githubusercontent.com/api-evangelist/roll/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,19 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-sunset: '2025-05-26'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Social Tokens
+- Creator Economy
+- Blockchain
+- Ethereum
+- Web3
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/roll-domain-security.yml
 - type: Website
   url: https://tryroll.com/
+- type: Blog
+  url: https://blog.tryroll.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
